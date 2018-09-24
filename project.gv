@@ -1,0 +1,45 @@
+digraph paltracker {
+	a[label="registration-server"][shape="box"];
+	b[label="timesheets-server"][shape="box"];
+
+	c[label="accounts"];
+	d[label="projects"];
+	e[label="timesheets"];
+	f[label="users"];
+	g[label="rest-support"];
+	h[label="test-support"];
+	
+	a -> c;
+	a -> d;
+	a -> f;
+
+	c -> f;
+	c -> g;
+	c -> h[label="test"][color="grey"];
+
+	d -> g;
+	d -> h[label="test"][color="grey"];
+
+	e -> g;
+	e -> h[label="test"][color="grey"];
+
+	f -> g;
+	f -> h[label="test"][color="grey"];
+
+	b -> e;
+	e -> a [style="dotted"];
+	e -> g;
+
+	a -> g;
+	b -> g;
+
+	a -> h [label="test"][color="grey"];
+	b -> h [label="test"][color="grey"];
+
+	h -> g;
+
+	{ rank=same; a b }
+	{ rank=same; c d e f }
+	{ rank=same; g h }
+
+}
