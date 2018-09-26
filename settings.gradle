@@ -1,5 +1,9 @@
 rootProject.name = "pal-tracker-distributed"
 
+include "platform-services:eureka-server"
+include "platform-services:config-server"
+include "platform-services:hysterix-dashboard"
+
 include "applications:registration-server"
 include "applications:timesheets-server"
 
