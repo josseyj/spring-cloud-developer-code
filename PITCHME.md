@@ -1,11 +1,11 @@
-# Microservices
+# Agenda
 
+* <s>Distributed</s> Micro services
+* Abstraction Overhead
+* OSS Language Alignment
+* Code Optionally
+* Prefer Construction Injection.
+* Handy tools
+  
 ---
-
-# <s>Distributed</s> Microservices
-
----
-
-# Applying Microservices patterns on a Monolyth
-
 
