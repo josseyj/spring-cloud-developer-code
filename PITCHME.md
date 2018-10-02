@@ -2,7 +2,7 @@
 
 ---
 
-# ~Distributed~ Microservices
+# <s>Distributed</s> Microservices
 
 ---
 
