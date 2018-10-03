@@ -1,9 +1,9 @@
 apply from: "$projectDir/../server.gradle"
 
 dependencies {
-    compile "org.springframework.cloud:spring-cloud-netflix-eureka-server"
 }
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.cloud:spring-cloud-netflix-eureka-server"
 }

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  config-server:
+    build: platform-services/config-server
+  eureka-server:
+    build: platform-services/eureka-server
+  registration-server:
+    build: applications/registration-server
+    ports:
+      - "8083:8083"

@@ -1,4 +1,11 @@
 apply plugin: "org.springframework.boot"
+apply plugin: 'com.github.johnrengelman.shadow'
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
+    }
+}
 
 dependencies {
     compile project(":components:rest-support")
@@ -8,6 +15,11 @@ dependencies {
 
     compile "io.springfox:springfox-swagger2:2.9.2"
     compile "io.springfox:springfox-swagger-ui:2.9.2"
+    compile "com.google.guava:guava:20.0"
+
+    compile "org.springframework.cloud:spring-cloud-commons"
+    compile "org.springframework.cloud:spring-cloud-starter-eureka"
+    compile "org.springframework.cloud:spring-cloud-starter-config"
 
     testCompile project(":components:test-support")
 }
