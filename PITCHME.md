@@ -19,5 +19,9 @@
 * [Application continuum](http://www.appcontinuum.io/)
   > * ... start anywhere on the continuum depending on how much you know ...
   * [Presentation](http://deck.appcontinuum.io/assets/player/KeynoteDHTMLPlayer.html)
-  * Our batch jobs could be different modules
-  * 
+  * Our batch jobs could be different independent modules
+
+---
+
+## Abstraction Overhead
+
