@@ -1,10 +1,11 @@
 # Agenda
 
 * <s>Distributed</s> Micro services
+* Fault Tolerance
 * Abstraction Overhead
-* OSS Language Alignment
 * Code Optionally
-* Prefer Construction Injection.
+* Construction Injection.
+* OSS Language Alignment
 * Handy tools
   
 ---
@@ -23,5 +24,53 @@
 
 ---
 
+## Fault Tolerance
+
+* Murphy's law ~ if it can break, it will break
+* Netflix Hystrix
+  * Circuit Breaker
+  * Isolation
+    * walk away time outs
+
+---
+
 ## Abstraction Overhead
 
+* Avoid unnecessary interfaces
+* Interface and implementation together
+
+---
+
+## Code Optionally
+
+* NPE is still a reality
+* Don't combine both (within a single unit)
+
+---
+
+## Constructor Injection.
+
+* Spring supports it.
+* But the beans look less springy
+* Usually strategies are also immutable references
+* Works with Mockito (mostly)
+
+---
+
+## OSS Language Alignment
+
+* Non functional tests
+
+---
+
+## Handy tools
+
+* [httpie](https://github.com/jakubroztocil/httpie)
+  * http PUT api.example.com/person/1 \
+    name=John \
+    age:=29 married:=false hobbies:='["http", "pies"]' \  # Raw JSON
+    description=@about-john.txt \   # Embed text file
+    bookmarks:=@bookmarks.json      # Embed JSON file
+* [async-profiler](https://github.com/jvm-profiling-tools/async-profiler)
+  * Provides a flame graph
+    * ![image](https://github.com/jvm-profiling-tools/async-profiler/blob/master/demo/SwingSet2.svg)
