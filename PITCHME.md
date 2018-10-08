@@ -72,5 +72,5 @@
     description=@about-john.txt \   # Embed text file
     bookmarks:=@bookmarks.json      # Embed JSON file
 * [async-profiler](https://github.com/jvm-profiling-tools/async-profiler)
-  * Provides a flame graph
-    * ![image](https://github.com/jvm-profiling-tools/async-profiler/blob/master/demo/SwingSet2.svg)
+  * Provides a [flame graph](https://github.com/jvm-profiling-tools/async-profiler/blob/master/demo/SwingSet2.svg)
+
